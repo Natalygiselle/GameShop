@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;400;500&family=Karla:ital,wght@0,200;1,200&family=Open+Sans:wght@300;400&family=Raleway:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --headerfooter-color: white;
+    --span-color: red;
+    --headerfooter-background:#222222;
+    --title-color: #000000;
+    --ofert-color:#619D00;
+
+
+}
+
+/*HEADER*/
+
+header{
+    background-color: var(--headerfooter-background);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    
+    
+}
+header .hamburguesa{
+    display: none;
+    width: 27px;
+    height: 27px;
+
+    
+    
+}
+.logo_title{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    width: 30%;
+    justify-content: space-evenly;
+    
+}
+.game_paragraph{
+    margin-left: 10px;
+    width: 60%;
+    color: var(--headerfooter-color);
+    font-weight: 700;
+    font-size: 25px;
+}
+span{
+    color: var(--span-color);
+}
+.nav_title{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-evenly;
+    
+}
+.carrito{
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+.nav_head{
+    margin-right: 20px;
+    width: ;
+}
+.nav_menu{
+    color: var(--headerfooter-color);
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 18px;
+    
+}
+
+/*MAIN*/
+
+.main_section{
+    height: calc(100vh - 110px);
+    background-image: url(../img/backgroundGame.png);
+    flex-direction: column;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 40px;
+    color: var(--headerfooter-color);
+    text-transform: uppercase;
+    
+}
+button{
+    margin-top: 25px;
+    width: 200px;
+    padding: 16px ;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: orangered;
+    color: var(--headerfooter-color);
+    
+}
+
+main{
+    background-color: #bfc3c7;
+}
+.products_title{
+    margin: 40px  20px;
+    text-align: center;
+    font-size: 30px;
+}
+.main_cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.cards_products{
+    width: 265px;
+    height: 322px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+}
+.img_products{
+    padding: 30px 68px;
+}
+p{
+    text-align: left;
+    
+    margin-left: 20px;
+}
+hr{
+    margin-bottom: 20px;
+    
+}
+.ofert{
+    color: var(--ofert-color);
+}
+
+.start_products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.star_cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.star_card{
+    background-image: url(../img/banner\ 1.png);
+    width: 360px;
+    height: 135px;
+    border-radius: 5px;
+    margin-bottom: 80px;
+}
+.star_card:nth-of-type(2){
+    background-image: url(../img/banner\ 2.png);
+}
+.star_title{
+    color: var(--headerfooter-color);
+    font-size: 25px;
+    margin: 53px 10px 53px 185px;
+}
+
+.contacto{
+    background-color: var(--headerfooter-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.foter_media{
+    display: flex;
+    flex-direction: column;
+    
+    margin-right: 68px;
+}
+
+.foter_icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 150px;
+    margin-bottom: 60px;
+    
+}
+i{
+font-size:  32px;
+}
+.fa-twitter{
+    color:#14AED0
+}
+.fa-facebook{
+    color:#1476D0;
+}
+.fa-instagram{
+    color:#CE0CFF;
+}
+.footer_paragraph{
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Responsive*/
+
+@media (max-width: 400px){
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    
+    .nav_title{
+        display: none;
+    }
+    header .hamburguesa{
+        display: block;
+        margin-right: 30px;
+        margin-top: 30px;
+    }
+    h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    button{
+        width: 150px;
+        font-size: 20;
+    }
+    .cards_products{
+        margin-bottom: 20px;
+    }
+    .star_card{
+        width:300px;
+    }
+    .star_title{
+        font-size: 20px;
+        margin: 53px 5px 53px 160px;
+    
+    }
+    .contacto{
+        
+        flex-direction: column;
+        text-align: center;
+        
+        
+    }
+    .logo_title{
+        margin: 25px 0 5px;
+    }
+    .foter_media{
+        margin: 0 95px 0 0;
+        
+        
+    }
+    .foter_icons{
+        margin-bottom: 90px;
+        margin-right: 15px;
+        
+    }
+}
